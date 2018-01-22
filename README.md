@@ -1,3 +1,5 @@
+<!-- WDI6 3:02 -->
+
 # SASSy Node
 Using SASS in a node project, for fun and profit
 
@@ -39,6 +41,7 @@ gulp.task('default', function() {
 });
 ```
 1. In your terminal, run `gulp`! You should see our default task run.
+<!-- WDI6 3:12 handed to devs -->
 
 ### 4. Compile Sass
 
@@ -70,7 +73,7 @@ Create a `/sass` directory and `touch` a `main.scss` file inside.
 Run `gulp styles` and it will find your `.scss` file and output a corresponding `.css` file for you.
 
 Lastly let's add the task we just created to gulp's `default` task and have it run the task upon file changes by watching the file. Now every time you save, your `.scss` will trigger the `styles` gulp task and compile the changes for you!
-
+<!-- WDI6 3:28 turning over to devs -->
 <!--11:32 when turning over to devs -->
 
 To do this, at the bottom of your file add:
@@ -82,6 +85,8 @@ gulp.task('default',function() {
 ```
 
 Now we can run our Sass compilation with just `gulp`.
+
+<!-- WDI6 3:39 turning over to devs -->
 
 ### 5. What the hell, let's add Browser Sync as well
 
@@ -121,6 +126,7 @@ gulp.task('default', ['serve']);
 >The above functions were contructed using [Browser Sync's Documentation](https://browsersync.io/docs/gulp)
 
 You can stop your Python Simple Server now - `Browser Sync` is running the show now! Restart `gulp` and watch it go!
+<!-- WDI6 3:52 turning over to devs -->
 
 ## Refactoring with Sass
 If we make a change in our `main.scss` file, then save it, we should see a new file pop into our CSS folder - `main.css`. Let's make that our new stylesheet, by changing the link in `index.html`:
