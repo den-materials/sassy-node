@@ -348,17 +348,20 @@ In Sass, we can use `@import` to seperate out our styles into semantic bits, the
 
 `touch sass/_card.scss`
 
-Notice that I added an underscore before the file name - this tells Sass it's a `partial `. Partials don't get compiled into their own document, but instead are meant only to be brought into other SCSS documents raw. As a result, Gulp will ignore changes in this file and only recompile when `main.scss` is saved.
+Notice that I added an underscore before the file name - this tells Sass it's a `partial `. 
+
+<!-- Partials don't get compiled into their own document, but instead are meant only to be brought into other SCSS documents raw. As a result, Gulp will ignore changes in this file and only recompile when `main.scss` is saved.
 
 Next, we can remove the entirety of our `.card` declaration, and move it to `card.scss`.
-
+-->
 This is a lot neater, but it's not connected yet. Add an import declaration into `main.scss`, right where the code used to be:
 
 `@import '_card';`
 
 Now whenever we save `main.scss`, we'll also be importing `_card.scss` into the mix.
-
+<!--
 >Protip: `_card.scss` doesn't get compiled when you save it - it only gets compiled when `main.scss` is saved by default (you don't see this in our build, though, because Browser Sync is watching EVERY file for changes). This is because it's a partial - if you hate this, remove the underscore to make it a full-blown scss document. But be warned - your site will now be making 2 HTTP requests, one for each scss document.
+-->
 
 ### Extending/Inheritance
 
