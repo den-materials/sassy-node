@@ -10,8 +10,8 @@ SASS makes CSS easier, and modularized - used correctly, you can start to mimic 
 1. Compile SASS using Node
 
 ## Set Up
-The starter code in this folder (`app`) is the solution code from our [Angular Directives Lab](https://github.com/den-materials/angular-directives-lab). It’s just a frontend, but that’s all we need to get started!
-Let’s start by initializing our repo with NPM and installing Gulp.
+<!-- The starter code in this folder (`app`) is the solution code from our [Angular Directives Lab](https://github.com/den-materials/angular-directives-lab). It’s just a frontend, but that’s all we need to get started! -->
+We have starter code that gives us a nice little front end to experiment with. Let’s start by initializing our repo with NPM and installing Gulp.
 
 ### 1. Initialize Node
 
